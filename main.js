@@ -31,6 +31,21 @@ document.getElementById("answer2");}
 
 
 
+//Which item has a "GBP" currency code? Display it's name and price.
 
 
 
+document.getElementById("answer3");}
+
+//Display a list of all items who are made of wood.
+
+document.getElementById("answer4");}
+//Which items are made of eight or more materials? Display the name, number of items and the items it is made of.
+
+document.getElementById("answer5");}
+
+
+//How many items were made by their sellers?
+
+
+document.getElementById("answer6");}
