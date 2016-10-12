@@ -88,7 +88,7 @@ answer3Box.innerHTML += answer3[i].currency_code;
 
 // // //Display a list of all items who are made of wood.
 
-
+//filter
 // var woodItems = items.filter(function(items) {
 // 	return items.materials === "wood";
 //});
@@ -97,7 +97,12 @@ answer3Box.innerHTML += answer3[i].currency_code;
 ///.includes   
 
 /// loop over each object 
-
+var woodItems = items.filter(function (x) {
+ return x.materials.includes ("wood")
+}); 
+var woodItemList = woodItems.map(function (y){
+  return y.title;});  
+  document.getElementById ("answer4").innerHTML=woodItemList.join("Items are made of wood");
 
 
 
@@ -115,7 +120,13 @@ answer3Box.innerHTML += answer3[i].currency_code;
 
 
 // //How many items were made by their sellers?
-
+var madeItems = items.map(function (x) {
+  return x.who_made.includes ("i_did")
+});
+var iMade = madeItems.filter(function (y) {
+  return y = "i_did";
+document.getElementById("answer6").innerHTML=iMade.length;
+})
 
 // document.getElementById("answer6");}
 
